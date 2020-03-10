@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Page title</title>
+    <style>
+      .item-1 {
+        grid-area: one;
+      }
+      .item-2 {
+        grid-area: two;
+      }
+      .item-3 {
+        grid-area: three;
+      }
+      .item-4 {
+        grid-area: four;
+      }
+      .item-6 {
+        grid-area: six;
+      }
+      .item-7 {
+        grid-area: seven;
+      }
+      .item-8 {
+        grid-area: eight;
+      }
+      .item-9 {
+        grid-area: nine;
+      }
+      .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 160px 160px 160px;
+        grid-template-rows: repeat(3,120px);
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        grid-template-areas:
+          "one one three"
+          "four . six"
+          "seven eight six"
+
+      }
+
+      .img_size {
+        width: 160px;
+        height: 120px;
+      }
+
+      .item-1 img {
+        width: 323px;
+        height: 120px;
+      }
+
+      .item-6 img {
+        width: 160px;
+        height:243px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Hello, Mexico!</h1>
+    <div class="container">
+      <div class="item-1">
+        <img class="img_size" src = "https://cdn.thecrazytourist.com/wp-content/uploads/2018/08/ccimage-shutterstock_514113526.jpg" alt = "Mexico">
+      </div>
+      <!-- <div class="item-2">
+        <img class="img_size" src = "https://www.teflcertificatecourses.com/images/galerias/guadalajara/16.jpg" alt = "Mexico">
+      </div> -->
+      <div class="item-3">
+        <img class="img_size" src = "https://cdn.thecrazytourist.com/wp-content/uploads/2018/08/ccimage-shutterstock_772099840.jpg" alt = "Mexico">
+      </div>
+      <div class="item-4">
+        <img class="img_size" src = "https://www.travelreport.mx/wp-content/uploads/2019/02/que-hacer-en-tlaquepaque-letras.jpg" alt = "Mexico">
+      </div>
+      <div class="item-6">
+        <img class="img_size" src = "https://ca-times.brightspotcdn.com/dims4/default/a58dab5/2147483647/strip/true/crop/2048x1152+0+0/resize/840x473!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fcc%2F19%2F560efb17fa5a1f684ddb749aa74d%2Fla-1550173845-8qi1f2qcw2-snap-image" alt = "Mexico">
+      </div>
+      <div class="item-7">
+        <img class="img_size" src = "https://img.theculturetrip.com/768x432/wp-content/uploads/2015/10/sctp0137-city-guide-guadalajara-mexico-bruce-9-e1526563681566.jpg" alt = "Mexico">
+      </div>
+      <div class="item-8">
+        <img class="img_size" src = "https://www.visitmexico.com/viajemospormexico/assets/uploads/destinos/jalisco_destinos-principales_guadalajara_int.jpg" alt = "Mexico">
+      </div>
+      <!-- <div class="item-9">
+        <img class="img_size" src = "https://cityofguadalajara.com/wp-content/uploads/2016/11/Centro-Historico-de-Guadalajara-800x288.jpg" alt = "Mexico">
+      </div> -->
+
+
+    </div>
+  </body>
+</html>
